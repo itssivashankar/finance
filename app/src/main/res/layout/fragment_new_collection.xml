@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.collection.CreateFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/outer_layout_margin"
+        app:cardCornerRadius="@dimen/form_element_radius"
+        app:contentPadding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/inner_layout_margin"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/inner_layout_margin"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/inner_layout_margin"
+                        android:drawableStart="@drawable/ic_collections_24"
+                        android:gravity="center"
+                        android:padding="@dimen/content_margin"
+                        android:text="Add New Collection"
+                        android:textColor="@color/primaryLite"
+                        android:textSize="25sp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/employee"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:selectionRequired="true"
+                        android:layout_gravity="bottom"
+                        android:padding="@dimen/button_padding"
+                        android:text="Select Employee"
+                        app:cornerRadius="@dimen/form_element_radius" />
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/barrower_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:padding="@dimen/button_padding"
+                        android:text="Select Barrower"
+                        app:cornerRadius="@dimen/form_element_radius" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/loan_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:padding="@dimen/button_padding"
+                        android:text="Select Loan NO"
+                        app:cornerRadius="@dimen/form_element_radius" />
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/TextInput"
+                        android:id="@+id/LoanCollectionType_view"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/LoanCollectionType"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            android:hint="Loan Collection Type"
+                            android:importantForAutofill="no"
+                            android:inputType="text"
+                            android:maxLines="10" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/TextInput"
+                        android:id="@+id/PrincipalAmount_view"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/PrincipalAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="PrincipalAmount"
+                            android:importantForAutofill="no"
+                            android:inputType="text"
+                            android:enabled="false"
+                            android:maxLines="10" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/TextInput"
+                        android:id="@+id/RateOfInterest_view"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/RateOfInterest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Rate Of Interest"
+                            android:enabled="false"
+                            android:importantForAutofill="no"
+                            android:inputType="text"
+                            android:maxLines="10" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/TextInput"
+                        android:id="@+id/dweamount_view"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/dweamount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Due Amount"
+                            android:text="0"
+                            android:enabled="false"
+                            android:importantForAutofill="no"
+                            android:inputType="text"
+                            android:maxLines="10" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/colletion_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:padding="@dimen/button_padding"
+                        android:text="Select Status"
+                        app:cornerRadius="@dimen/form_element_radius" />
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/collection_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:padding="@dimen/button_padding"
+                        android:text="Collection Date"
+                        app:cornerRadius="@dimen/form_element_radius" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/paid_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:padding="@dimen/button_padding"
+                        android:text="Paid Date"
+                        app:cornerRadius="@dimen/form_element_radius" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/createCollection"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:padding="@dimen/button_padding"
+                        android:text="Create"
+                        app:cornerRadius="@dimen/form_element_radius" />
+                </LinearLayout>
+            </ScrollView>
+            <ProgressBar
+                android:id="@+id/progress"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>

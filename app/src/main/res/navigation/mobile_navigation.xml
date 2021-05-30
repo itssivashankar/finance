@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/nav_dashboard">
+
+    <fragment
+        android:id="@+id/nav_dashboard"
+        android:name="com.example.sample.ui.dashboard.DashboardFragment"
+        android:label="@string/menu_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/nav_col_list"
+        android:name="com.example.sample.ui.collection.ListFragment"
+        android:label="@string/menu_collection"
+        tools:layout="@layout/fragment_list_collections" />
+
+    <fragment
+        android:id="@+id/nav_col_create"
+        android:name="com.example.sample.ui.collection.CreateFragment"
+        android:label="Add Collection"
+        tools:layout="@layout/fragment_new_collection" />
+
+    <fragment
+        android:id="@+id/nav_bor_create"
+        android:name="com.example.sample.ui.borrower.CreateFragment"
+        android:label="Add Borrower"
+        tools:layout="@layout/fragment_new_borrowers" />
+
+    <fragment
+        android:id="@+id/nav_bor_list"
+        android:name="com.example.sample.ui.borrower.ListFragment"
+        android:label="@string/menu_borrowers"
+        tools:layout="@layout/list_item_borrower" />
+    <fragment
+        android:id="@+id/nav_loan_create"
+        android:name="com.example.sample.ui.loan.LoanFragment"
+        android:label="Add Loan"
+        tools:layout="@layout/fragment_loan" />
+
+    <fragment
+        android:id="@+id/nav_loan_list"
+        android:name="com.example.sample.ui.loan.LoanListFragment"
+        android:label="@string/menu_loan"
+        tools:layout="@layout/fragment_loan_list" />
+    <fragment
+        android:id="@+id/nav_expenses_create"
+        android:name="com.example.sample.ui.expenses.Expenses_Fragment"
+        android:label="Add Expenses"
+        tools:layout="@layout/fragment_expenses" />
+
+    <fragment
+        android:id="@+id/nav_expenses_list"
+        android:name="com.example.sample.ui.expenses.Expenses_Fragment"
+        android:label="@string/menu_reports"
+        tools:layout="@layout/list_item_borrower" />
+    <fragment
+        android:id="@+id/nav_report_list"
+        android:name="com.example.sample.ui.reports.ReportFragment"
+        android:label="@string/menu_reports"
+        tools:layout="@layout/fragment_report" />
+
+</navigation>
